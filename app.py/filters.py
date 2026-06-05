@@ -138,11 +138,11 @@ def sidebar_filters(df: pd.DataFrame) -> dict:
     _init_state(df)
 
     with st.sidebar:
-        st.markdown("## 🎛️  Filters")
+        st.markdown("##   Filters")
         st.caption("All charts update live as you change these.")
 
         st.text_input(
-            "🔎 Search (symbol or name)",
+            " Search (symbol or name)",
             key="f_search",
             placeholder="e.g. Apple, ABBV…",
         )
