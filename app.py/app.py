@@ -82,12 +82,12 @@ except FileNotFoundError as e:
 # ----------------------------------------------------------------------
 # Header
 # ----------------------------------------------------------------------
-st.title("📈 NYSE Listed Companies — EDA Dashboard")
+st.title("📈 NYSE Listed Companies ")
 st.markdown(
     "Exploratory analysis of every security currently listed on the New York "
     "Stock Exchange. The raw file contains only **ticker** and **company name**, "
     "so derived features (security type, share class, coupon rate, symbol "
-    "length, etc.) are engineered to power a full 10-chart EDA."
+    "length, etc.) ."
 )
 
 # ----------------------------------------------------------------------
@@ -163,7 +163,7 @@ st.dataframe(
 )
 
 st.download_button(
-    "⬇️  Download filtered data (CSV)",
+    " Download filtered data (CSV)",
     data=df.to_csv(index=False).encode("utf-8"),
     file_name="nyse_filtered.csv",
     mime="text/csv",
